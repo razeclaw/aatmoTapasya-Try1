@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Aatmo Tapasya - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -26,12 +27,12 @@
         }
 
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 2.5rem;
             margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
 
@@ -42,7 +43,7 @@
             border: 2px solid #f9f9f9;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 1rem;
             transition: 0.3s;
         }
 
@@ -69,11 +70,11 @@
 
         .feature h3 {
             margin-bottom: 10px;
-            font-size: 1.5em;
+            font-size: 1.5rem;
         }
 
         .feature p {
-            font-size: 1em;
+            font-size: 1rem;
         }
 
         .cta {
@@ -87,7 +88,7 @@
             color: #19191c;
             border: none;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1.2rem;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -97,13 +98,57 @@
             color: #f9f9f9;
             border: 2px solid #f9f9f9;
         }
+
+        footer {
+            padding: 40px 0;
+            background: #19191c;
+            color: #f9f9f9;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .footer-col ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-col ul li a {
+            color: #f9f9f9;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-col ul li a:hover {
+            color: #bbb;
+        }
+
+        .social-links a {
+            color: #f9f9f9;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #bbb;
+        }
     </style>
 </head>
 <body>
     <!-- Hero Section -->
     <div class="hero">
         <h1>Welcome to Aatmo Tapasya</h1>
-        <p>Embark on a journey of self-discovery, peace, and spiritual growth through yoga and mindfulness.</p>
+        <p>Join us on a transformative journey of self-discovery, peace, and spiritual growth through yoga and mindfulness.</p>
         <button onclick="redirectTo('services.html')">Explore Our Services</button>
     </div>
 
@@ -111,32 +156,78 @@
     <div class="features">
         <div class="feature">
             <h3>Yoga Classes</h3>
-            <p>Join our beginner to advanced classes for physical and mental well-being.</p>
+            <p>Join us for classes designed for all levels, focusing on both physical fitness and mental wellness.</p>
         </div>
         <div class="feature">
             <h3>Meditation Tools</h3>
-            <p>Explore our range of singing bowls, mala beads, and spiritual aids.</p>
+            <p>Browse our collection of spiritual tools like singing bowls, mala beads, and other aids for mindfulness.</p>
         </div>
         <div class="feature">
             <h3>Workshops</h3>
-            <p>Participate in spiritual workshops and retreats to rejuvenate your soul.</p>
+            <p>Enhance your spiritual journey with our specialized workshops and retreats.</p>
         </div>
         <div class="feature">
             <h3>Blogs & Videos</h3>
-            <p>Learn about yoga and spirituality through our blogs and YouTube channel.</p>
+            <p>Stay inspired and informed through our blogs and educational videos on yoga and spirituality.</p>
         </div>
     </div>
 
     <!-- Call-to-Action Section -->
     <div class="cta">
-        <h2>Ready to Transform Your Life?</h2>
-        <button onclick="redirectTo('contact.html')">Contact Us Today</button>
+        <h2>Ready to Begin Your Transformation?</h2>
+        <button onclick="redirectTo('contact.html')">Get In Touch</button>
     </div>
 
-    <script type="text/javascript">
-        const redirectTo = (page) => {
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Shop Online</h4>
+                <ul>
+                    <li><a href="#">Yoga Accessories</a></li>
+                    <li><a href="#">Yoga Mats</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Singing Bowls</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://m.youtube.com/@AatmoTapasya"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function redirectTo(page) {
             window.location.href = page;
-        };
+        }
     </script>
 </body>
 </html>
