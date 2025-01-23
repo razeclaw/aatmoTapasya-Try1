@@ -27,12 +27,12 @@
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
 
@@ -43,7 +43,7 @@
             border: 2px solid #f9f9f9;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 1em;
             transition: 0.3s;
         }
 
@@ -70,11 +70,11 @@
 
         .feature h3 {
             margin-bottom: 10px;
-            font-size: 1.5rem;
+            font-size: 1.5em;
         }
 
         .feature p {
-            font-size: 1rem;
+            font-size: 1em;
         }
 
         .cta {
@@ -88,7 +88,7 @@
             color: #19191c;
             border: none;
             border-radius: 5px;
-            font-size: 1.2rem;
+            font-size: 1.2em;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -100,9 +100,9 @@
         }
 
         footer {
-            padding: 40px 0;
             background: #19191c;
             color: #f9f9f9;
+            padding: 40px 0;
         }
 
         .footer .container {
@@ -142,13 +142,24 @@
         .social-links a:hover {
             color: #bbb;
         }
+
+        @media (max-width: 768px) {
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-col {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Hero Section -->
     <div class="hero">
         <h1>Welcome to Aatmo Tapasya</h1>
-        <p>Join us on a transformative journey of self-discovery, peace, and spiritual growth through yoga and mindfulness.</p>
+        <p>Embark on a journey of self-discovery, peace, and spiritual growth through yoga and mindfulness.</p>
         <button onclick="redirectTo('services.html')">Explore Our Services</button>
     </div>
 
@@ -156,26 +167,26 @@
     <div class="features">
         <div class="feature">
             <h3>Yoga Classes</h3>
-            <p>Join us for classes designed for all levels, focusing on both physical fitness and mental wellness.</p>
+            <p>Join our beginner to advanced classes for physical and mental well-being.</p>
         </div>
         <div class="feature">
             <h3>Meditation Tools</h3>
-            <p>Browse our collection of spiritual tools like singing bowls, mala beads, and other aids for mindfulness.</p>
+            <p>Explore our range of singing bowls, mala beads, and spiritual aids.</p>
         </div>
         <div class="feature">
             <h3>Workshops</h3>
-            <p>Enhance your spiritual journey with our specialized workshops and retreats.</p>
+            <p>Participate in spiritual workshops and retreats to rejuvenate your soul.</p>
         </div>
         <div class="feature">
             <h3>Blogs & Videos</h3>
-            <p>Stay inspired and informed through our blogs and educational videos on yoga and spirituality.</p>
+            <p>Learn about yoga and spirituality through our blogs and YouTube channel.</p>
         </div>
     </div>
 
     <!-- Call-to-Action Section -->
     <div class="cta">
-        <h2>Ready to Begin Your Transformation?</h2>
-        <button onclick="redirectTo('contact.html')">Get In Touch</button>
+        <h2>Ready to Transform Your Life?</h2>
+        <button onclick="redirectTo('contact.html')">Contact Us Today</button>
     </div>
 
     <!-- Footer Section -->
@@ -187,7 +198,7 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Our Services</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -203,12 +214,12 @@
             </div>
 
             <div class="footer-col">
-                <h4>Shop Online</h4>
+                <h4>Online Shop</h4>
                 <ul>
                     <li><a href="#">Yoga Accessories</a></li>
-                    <li><a href="#">Yoga Mats</a></li>
+                    <li><a href="#">Yoga Mat</a></li>
                     <li><a href="#">Bracelets</a></li>
-                    <li><a href="#">Singing Bowls</a></li>
+                    <li><a href="#">Singing Bowl</a></li>
                 </ul>
             </div>
 
